@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "bai2",
+			"path": "."
+		},
+		{
+			"name": "bai3",
+			"path": "../bai3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "bai2"
+	}
+}

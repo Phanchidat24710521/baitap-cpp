@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a0d2eb;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: #8ccbf2;
+            width: 600px;
+            padding: 30px;
+            border: 1px solid #7cbbe3;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .header-logo {
+            background-color: #00ced1;
+            border: 2px solid #000;
+            border-radius: 15px;
+            width: 250px;
+            margin: 0 auto 20px auto;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 24px;
+            box-shadow: 4px 4px 0px #777;
+        }
+        h2 {
+            text-align: center;
+            color: #000080;
+            margin-bottom: 5px;
+        }
+        .sub-title {
+            text-align: center;
+            color: #000080;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 4px;
+            vertical-align: middle;
+            color: #000080;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 3px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #666;
+            margin: 15px 0;
+        }
+        .radio-group, .checkbox-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        .radio-group label, .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .button-container input {
+            padding: 3px 10px;
+            margin: 0 5px;
+            background-color: #e1e1e1;
+            border: 1px solid #777;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <!-- Header Logo Section -->
+    <div class="header-logo">
+        Jackson<br>Electronics
+    </div>
+
+    <h2>Registration Form</h2>
+    <div class="sub-title">Register your Jackson Electronics product here</div>
+
+    <form action="#" method="post">
+        <!-- Customer Info Section -->
+        <table>
+            <tr>
+                <td style="width: 120px;">First Name:</td>
+                <td><input type="text" name="firstname"></td>
+                <td style="width: 80px; text-align: right; padding-right: 10px;">Last Name:</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td>Address #1:</td>
+                <td colspan="3"><input type="text" name="address1"></td>
+            </tr>
+            <tr>
+                <td>Address #2:</td>
+                <td colspan="3"><input type="text" name="address2"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><input type="text" name="city"></td>
+                <td style="text-align: right; padding-right: 10px;">State:</td>
+                <td>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td><input type="text" name="state" style="width: 40px;"></td>
+                            <td style="text-align: right; padding-right: 5px;">Zip:</td>
+                            <td><input type="text" name="zip" style="width: 80px;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td colspan="3">
+                    <select name="country" style="width: 150px;">
+                        <option value="US">United States</option>
+                        <option value="VN">Vietnam</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Product Info Section -->
+        <table>
+            <tr>
+                <td style="width: 120px;">Product:</td>
+                <td>
+                    <select name="product" style="width: 150px;">
+                        <option value="scanmaster">ScanMaster</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date Purchased:</td>
+                <td><input type="text" name="date_purchased" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td>Serial #:</td>
+                <td><input type="text" name="serial" style="width: 150px;"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-top: 5px;">Used for:</td>
+                <td>
+                    <div class="radio-group">
+                        <label><input type="radio" name="used_for" value="home"> Home</label>
+                        <label><input type="radio" name="used_for" value="edu"> Educational Institution</label>
+                        <label><input type="radio" name="used_for" value="business"> Business</label>
+                        <label><input type="radio" name="used_for" value="other"> Other</label>
+                        <label><input type="radio" name="used_for" value="gov"> Government</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; padding-top: 5px;">System (check all that apply):</td>
+                <td>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="system" value="windows"> Windows</label>
+                        <label><input type="checkbox" name="system" value="unix"> UNIX</label>
+                        <label><input type="checkbox" name="system" value="mac"> Macintosh</label>
+                        <label><input type="checkbox" name="system" value="other"> Other</label>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Comments Section -->
+        <table>
+            <tr>
+                <td style="width: 120px; vertical-align: top;">Comments?:</td>
+                <td>
+                    <textarea name="comments" rows="5"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Buttons Section -->
+        <div class="button-container">
+            <input type="submit" value="Click to register">
+            <input type="reset" value="Click to cancel">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

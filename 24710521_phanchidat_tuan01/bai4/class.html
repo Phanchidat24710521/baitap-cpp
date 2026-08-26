@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Health Club Classes</title>
+    <style>
+        /* Định dạng font chữ mảnh và canh lề giống hệt hình ảnh mẫu */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.4;
+            margin: 10px;
+            color: #000000;
+        }
+
+        /* Khung bao quanh toàn bộ trang web (Đường viền mảnh màu xám) */
+        .wrapper {
+            max-width: 610px;
+            margin: 0 auto;
+            border: 1px solid #a0a0a0;
+            padding: 12px 15px;
+        }
+
+        /* Định dạng ảnh Header */
+        .header-img {
+            display: block;
+            margin-bottom: 5px;
+            border: none;
+        }
+
+        /* Thanh menu chữ nhỏ có đường kẻ ngang mảnh bên dưới */
+        .nav-links {
+            font-size: 11px;
+            color: #0000ff;
+            border-bottom: 1px solid #d0d0d0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+        .nav-links a {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        /* Các tiêu đề chính */
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 15px 0 10px 0;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 12px 0 2px 0;
+        }
+
+        p {
+            margin: 0 0 8px 0;
+        }
+
+        p.subtitle {
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        /* Định dạng danh sách dấu chấm (bullet) sát nhau */
+        ul {
+            margin: 0 0 12px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 2px;
+        }
+
+        /* Đường kẻ ngang mảnh phía trên chân trang */
+        .footer-line {
+            border-top: 1px solid #d0d0d0;
+            margin-top: 20px;
+            padding-top: 5px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- 1. Chèn ảnh Diamond cùng bản đồ liên kết nâng cao (Image Map) -->
+        <img src="diamond.jpg" alt="Diamond Health Club" usemap="#diamondmap" class="header-img" width="548" height="150">
+        
+        <map id="diamondmap" name="diamondmap">
+            <area shape="rect" coords="225,7,333,40" href="classes.htmll" alt="Classes" title="View our classes">
+            <area shape="rect" coords="258,44,437,82" href="member.htmll" alt="Member Ships" title="View our membership options">
+            <area shape="default" href="index.htmll" alt="Home Page" title="Return to the Home Page">
+        </map>
+
+        <!-- 2. Thanh menu điều hướng chữ nhỏ -->
+        <div class="nav-links">
+            <a href="home.htmll">Home Page</a> &nbsp;♦&nbsp; 
+            <a href="index.htmll#facilities">Facilities</a> &nbsp;♦&nbsp; 
+            <a href="classes.htmll">Classes</a> &nbsp;♦&nbsp; 
+            <a href="member.htmll">Memberships</a> &nbsp;♦&nbsp; 
+            <a href="index.htmll#staff">Staff</a> &nbsp;♦&nbsp; 
+            <a href="index.htmll#hours">Hours</a>
+        </div>
+
+        <!-- 3. Nội dung danh sách các lớp học -->
+        <h2>Diamond Health Club Classes</h2>
+        <p>Diamond Health Club offers several different classes for varying interests and abilities. To receive our current schedule, <a href="mailto:mlopez@dmond-health.com">e-mail Marcia Lopez</a>.</p>
+
+        <h3>Senior Classes</h3>
+        <p class="subtitle">For our members 60 years and older</p>
+        <ul>
+            <li>Aerobics</li>
+            <li>Yoga</li>
+            <li>Stretch and Strengthen</li>
+            <li>Water Aerobics</li>
+        </ul>
+
+        <h3>Adult Classes</h3>
+        <p class="subtitle">For members older than 16</p>
+        <ul>
+            <li>Aerobics</li>
+            <li>Kickboxing</li>
+            <li>Yoga</li>
+            <li>Circuit Training</li>
+            <li>Water Aerobics</li>
+            <li>Masters Swimming</li>
+        </ul>
+
+        <h3>Teen Classes</h3>
+        <p class="subtitle">For ages 12 to 18</p>
+        <ul>
+            <li>Aerobics</li>
+            <li>Basketball</li>
+            <li>Gymnastics</li>
+            <li>Weight Training</li>
+            <li>Swim lessons</li>
+            <li>Babysitting Certification</li>
+        </ul>
+
+        <h3>Children's Classes</h3>
+        <p class="subtitle">For ages 5 to 11</p>
+        <ul>
+            <li>CardioKids</li>
+            <li>Swim lessons</li>
+            <li>Jumping rope</li>
+        </ul>
+
+        <!-- 4. Chân trang thông tin liên hệ -->
+        <div class="footer-line">
+            <p><strong>Diamond Health Club ♦ 4317 Alvin Way ♦ Boise, ID 83701 ♦ (208) 555-4398</strong></p>
+            <p><em>Your Year-Round Source for Fun Family Health</em></p>
+        </div>
+    </div>
+
+</body>
+</html>
